@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Gourab Ghosh - Software Engineer</title>
+    <link href="./style.css" rel="stylesheet">
+    <script>
+      tailwind.config = {
+        darkMode: 'class'
+      };
+    </script>
+  </head>
+  <body class="bg-gray-50 dark:bg-gray-900 transition-colors duration-300">
+    <!-- Header/Navigation -->
+    <header class="fixed w-full bg-white dark:bg-gray-800 shadow-sm z-50 transition-colors duration-300">
+      <nav class="container mx-auto px-6 py-4">
+        <div class="flex items-center justify-between">
+          <h1 class="text-2xl font-bold text-gray-800 dark:text-white">Gourab</h1>
+          <div class="flex items-center space-x-8">
+            <button id="darkModeToggle" class="p-2 rounded-lg bg-gray-100 dark:bg-gray-700 hover:bg-gray-200 dark:hover:bg-gray-600 transition-colors duration-300">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-gray-800 dark:text-yellow-300 hidden dark:block" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z" />
+              </svg>
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-gray-800 dark:text-white block dark:hidden" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z" />
+              </svg>
+            </button>
+            <div class="hidden md:flex space-x-8">
+              <a href="#home" class="text-gray-600 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white transition-colors duration-300">Home</a>
+              <a href="#about" class="text-gray-600 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white transition-colors duration-300">About</a>
+              <a href="#skills" class="text-gray-600 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white transition-colors duration-300">Skills</a>
+              <a href="#contact" class="text-gray-600 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white transition-colors duration-300">Contact</a>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="min-h-screen flex items-center justify-center bg-gradient-to-br from-blue-50 via-gray-50 to-indigo-50 dark:from-gray-900 dark:via-gray-800 dark:to-gray-900 transition-colors duration-300">
+      <div class="container mx-auto px-6 py-24 md:py-32">
+        <div class="max-w-4xl mx-auto animate-on-scroll">
+          <div class="text-center mb-8">
+            <span class="text-blue-600 dark:text-blue-400 font-semibold mb-4 block">Full Stack Developer</span>
+            <h1 class="text-5xl md:text-7xl font-bold text-gray-900 dark:text-white mb-6 leading-tight">
+              Crafting Digital <span class="text-blue-600 dark:text-blue-400">Solutions</span> with Precision
+            </h1>
+            <p class="text-xl md:text-2xl text-gray-600 dark:text-gray-300 mb-12 max-w-3xl mx-auto leading-relaxed">
+              Transforming complex business requirements into elegant, scalable applications 
+              with modern technologies and best practices
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+              <a href="#contact" class="bg-blue-600 text-white px-8 py-4 rounded-lg hover:bg-blue-700 transition duration-300 ease-in-out transform hover:-translate-y-1 inline-flex items-center justify-center">
+                Get in touch
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 ml-2" viewBox="0 0 20 20" fill="currentColor">
+                  <path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd" />
+                </svg>
+              </a>
+              <a href="#skills" class="border-2 border-gray-800 dark:border-white text-gray-800 dark:text-white px-8 py-4 rounded-lg hover:bg-gray-800 dark:hover:bg-white hover:text-white dark:hover:text-gray-900 transition duration-300 ease-in-out transform hover:-translate-y-1 inline-flex items-center justify-center">
+                Explore my skills
+              </a>
+            </div>
+          </div>
+          <div class="grid grid-cols-3 gap-6 mt-16 text-center animate-on-scroll">
+            <div class="p-6 bg-white dark:bg-gray-800 rounded-xl shadow-sm hover:shadow-lg transition-shadow duration-300">
+              <h3 class="font-bold text-4xl text-blue-600 dark:text-blue-400 mb-2">4+</h3>
+              <p class="text-gray-600 dark:text-gray-300">Years Experience</p>
+            </div>
+            <div class="p-6 bg-white dark:bg-gray-800 rounded-xl shadow-sm hover:shadow-lg transition-shadow duration-300">
+              <h3 class="font-bold text-4xl text-blue-600 dark:text-blue-400 mb-2">50+</h3>
+              <p class="text-gray-600 dark:text-gray-300">Projects Completed</p>
+            </div>
+            <div class="p-6 bg-white dark:bg-gray-800 rounded-xl shadow-sm hover:shadow-lg transition-shadow duration-300">
+              <h3 class="font-bold text-4xl text-blue-600 dark:text-blue-400 mb-2">6+</h3>
+              <p class="text-gray-600 dark:text-gray-300">Technologies</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 bg-white dark:bg-gray-800 transition-colors duration-300">
+      <div class="container mx-auto px-6">
+        <h2 class="text-3xl font-bold text-center text-gray-900 dark:text-white mb-16 animate-on-scroll">About Me</h2>
+        <div class="max-w-5xl mx-auto grid md:grid-cols-2 gap-12 items-center">
+          <div class="space-y-6 animate-on-scroll">
+            <div class="bg-gray-50 dark:bg-gray-700 p-6 rounded-lg transform hover:scale-105 transition-transform duration-300">
+              <h3 class="text-xl font-semibold text-blue-600 dark:text-blue-400 mb-3">Full Stack Development</h3>
+              <p class="text-gray-600 dark:text-gray-300">
+                Specializing in end-to-end development using modern technologies and best practices.
+                From database design to user interfaces, I create seamless digital experiences.
+              </p>
+            </div>
+            <div class="bg-gray-50 dark:bg-gray-700 p-6 rounded-lg transform hover:scale-105 transition-transform duration-300">
+              <h3 class="text-xl font-semibold text-blue-600 dark:text-blue-400 mb-3">Problem Solving</h3>
+              <p class="text-gray-600 dark:text-gray-300">
+                Passionate about solving complex technical challenges and delivering efficient, 
+                scalable solutions that drive business growth.
+              </p>
+            </div>
+            <div class="bg-gray-50 dark:bg-gray-700 p-6 rounded-lg transform hover:scale-105 transition-transform duration-300">
+              <h3 class="text-xl font-semibold text-blue-600 dark:text-blue-400 mb-3">Continuous Learning</h3>
+              <p class="text-gray-600 dark:text-gray-300">
+                Committed to staying at the forefront of technology through continuous learning 
+                and adaptation to emerging trends and tools.
+              </p>
+            </div>
+          </div>
+          <div class="space-y-6 animate-on-scroll">
+            <div class="bg-blue-50 dark:bg-gray-700 p-8 rounded-lg">
+              <h3 class="text-2xl font-bold text-gray-900 dark:text-white mb-4">Professional Journey</h3>
+              <p class="text-gray-600 dark:text-gray-300 mb-6 leading-relaxed">
+                With 4 years of experience in the software industry, I've had the privilege of working 
+                on diverse projects that have sharpened my expertise in Laravel, React, Next.js, 
+                Node.js, Docker, and MySQL.
+              </p>
+              <div class="flex items-center space-x-4">
+                <span class="px-3 py-1 bg-blue-100 dark:bg-blue-900 text-blue-600 dark:text-blue-300 rounded-full text-sm">Laravel</span>
+                <span class="px-3 py-1 bg-blue-100 dark:bg-blue-900 text-blue-600 dark:text-blue-300 rounded-full text-sm">React</span>
+                <span class="px-3 py-1 bg-blue-100 dark:bg-blue-900 text-blue-600 dark:text-blue-300 rounded-full text-sm">Next.js</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="py-20 bg-gray-50 dark:bg-gray-900 transition-colors duration-300">
+      <div class="container mx-auto px-6">
+        <h2 class="text-3xl font-bold text-center text-gray-900 dark:text-white mb-12 animate-on-scroll">Skills & Technologies</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+          <!-- PHP -->
+          <div class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-sm hover:shadow-lg transition-all duration-300 transform hover:-translate-y-1 animate-on-scroll">
+            <div class="flex justify-between items-center mb-2">
+              <h3 class="font-semibold text-lg text-gray-900 dark:text-white">PHP</h3>
+              <span class="text-sm text-blue-600 dark:text-blue-400">90%</span>
+            </div>
+            <div class="w-full bg-gray-200 dark:bg-gray-700 rounded-full h-2.5">
+              <div class="bg-blue-600 h-2.5 rounded-full progress-bar" style="--progress: 90%"></div>
+            </div>
+          </div>
+
+          <!-- Laravel -->
+          <div class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-sm hover:shadow-lg transition-all duration-300 transform hover:-translate-y-1 animate-on-scroll">
+            <div class="flex justify-between items-center mb-2">
+              <h3 class="font-semibold text-lg text-gray-900 dark:text-white">Laravel</h3>
+              <span class="text-sm text-blue-600 dark:text-blue-400">95%</span>
+            </div>
+            <div class="w-full bg-gray-200 dark:bg-gray-700 rounded-full h-2.5">
+              <div class="bg-blue-600 h-2.5 rounded-full progress-bar" style="--progress: 95%"></div>
+            </div>
+          </div>
+
+          <!-- React -->
+          <div class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-sm hover:shadow-lg transition-all duration-300 transform hover:-translate-y-1 animate-on-scroll">
+            <div class="flex justify-between items-center mb-2">
+              <h3 class="font-semibold text-lg text-gray-900 dark:text-white">React</h3>
+              <span class="text-sm text-blue-600 dark:text-blue-400">85%</span>
+            </div>
+            <div class="w-full bg-gray-200 dark:bg-gray-700 rounded-full h-2.5">
+              <div class="bg-blue-600 h-2.5 rounded-full progress-bar" style="--progress: 85%"></div>
+            </div>
+          </div>
+
+          <!-- Next.js -->
+          <div class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-sm hover:shadow-lg transition-all duration-300 transform hover:-translate-y-1 animate-on-scroll">
+            <div class="flex justify-between items-center mb-2">
+              <h3 class="font-semibold text-lg text-gray-900 dark:text-white">Next.js</h3>
+              <span class="text-sm text-blue-600 dark:text-blue-400">80%</span>
+            </div>
+            <div class="w-full bg-gray-200 dark:bg-gray-700 rounded-full h-2.5">
+              <div class="bg-blue-600 h-2.5 rounded-full progress-bar" style="--progress: 80%"></div>
+            </div>
+          </div>
+
+          <!-- Node.js -->
+          <div class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-sm hover:shadow-lg transition-all duration-300 transform hover:-translate-y-1 animate-on-scroll">
+            <div class="flex justify-between items-center mb-2">
+              <h3 class="font-semibold text-lg text-gray-900 dark:text-white">Node.js</h3>
+              <span class="text-sm text-blue-600 dark:text-blue-400">85%</span>
+            </div>
+            <div class="w-full bg-gray-200 dark:bg-gray-700 rounded-full h-2.5">
+              <div class="bg-blue-600 h-2.5 rounded-full progress-bar" style="--progress: 85%"></div>
+            </div>
+          </div>
+
+          <!-- MySQL -->
+          <div class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-sm hover:shadow-lg transition-all duration-300 transform hover:-translate-y-1 animate-on-scroll">
+            <div class="flex justify-between items-center mb-2">
+              <h3 class="font-semibold text-lg text-gray-900 dark:text-white">MySQL</h3>
+              <span class="text-sm text-blue-600 dark:text-blue-400">90%</span>
+            </div>
+            <div class="w-full bg-gray-200 dark:bg-gray-700 rounded-full h-2.5">
+              <div class="bg-blue-600 h-2.5 rounded-full progress-bar" style="--progress: 90%"></div>
+            </div>
+          </div>
+
+          <!-- Docker -->
+          <div class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-sm hover:shadow-lg transition-all duration-300 transform hover:-translate-y-1 animate-on-scroll">
+            <div class="flex justify-between items-center mb-2">
+              <h3 class="font-semibold text-lg text-gray-900 dark:text-white">Docker</h3>
+              <span class="text-sm text-blue-600 dark:text-blue-400">75%</span>
+            </div>
+            <div class="w-full bg-gray-200 dark:bg-gray-700 rounded-full h-2.5">
+              <div class="bg-blue-600 h-2.5 rounded-full progress-bar" style="--progress: 75%"></div>
+            </div>
+          </div>
+
+          <!-- Git -->
+          <div class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-sm hover:shadow-lg transition-all duration-300 transform hover:-translate-y-1 animate-on-scroll">
+            <div class="flex justify-between items-center mb-2">
+              <h3 class="font-semibold text-lg text-gray-900 dark:text-white">Git</h3>
+              <span class="text-sm text-blue-600 dark:text-blue-400">85%</span>
+            </div>
+            <div class="w-full bg-gray-200 dark:bg-gray-700 rounded-full h-2.5">
+              <div class="bg-blue-600 h-2.5 rounded-full progress-bar" style="--progress: 85%"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-white dark:bg-gray-800 transition-colors duration-300">
+      <div class="container mx-auto px-6">
+        <h2 class="text-3xl font-bold text-center text-gray-900 dark:text-white mb-12 animate-on-scroll">Contact Me</h2>
+        <div class="max-w-3xl mx-auto">
+          <div class="grid md:grid-cols-2 gap-8">
+            <div class="bg-gray-50 dark:bg-gray-700 p-8 rounded-lg transform hover:scale-105 transition-all duration-300 animate-on-scroll">
+              <div class="flex items-center space-x-4 mb-4">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-blue-600 dark:text-blue-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                </svg>
+                <div>
+                  <h3 class="text-lg font-semibold text-gray-900 dark:text-white">Email</h3>
+                  <a href="mailto:gourabg998@gmail.com" class="text-blue-600 dark:text-blue-400 hover:underline">gourabg998@gmail.com</a>
+                </div>
+              </div>
+            </div>
+            <div class="bg-gray-50 dark:bg-gray-700 p-8 rounded-lg transform hover:scale-105 transition-all duration-300 animate-on-scroll">
+              <div class="flex items-center space-x-4 mb-4">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-blue-600 dark:text-blue-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+                </svg>
+                <div>
+                  <h3 class="text-lg font-semibold text-gray-900 dark:text-white">Phone</h3>
+                  <a href="tel:01777581626" class="text-blue-600 dark:text-blue-400 hover:underline">01777581626</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-8">
+      <div class="container mx-auto px-6 text-center">
+        <p>&copy; 2024 Gourab Ghosh. All rights reserved.</p>
+      </div>
+    </footer>
+
+   
+
+    <script>
+      // Dark mode toggle
+      const darkModeToggle = document.getElementById('darkModeToggle');
+      const html = document.documentElement;
+
+      // Check for saved dark mode preference
+      if (localStorage.getItem('darkMode') === 'true') {
+        html.classList.add('dark');
+      }
+
+      darkModeToggle.addEventListener('click', () => {
+        html.classList.toggle('dark');
+        localStorage.setItem('darkMode', html.classList.contains('dark'));
+      //   document.documentElement.setAttribute("data-theme",  html.classList.contains('dark')
+      // ? "dark" : "light"
+      // );
+
+      });
+
+      // Intersection Observer for scroll animations
+      const observerOptions = {
+        root: null,
+        rootMargin: '0px',
+        threshold: 0.1
+      };
+
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('animate');
+            observer.unobserve(entry.target); // Stop observing once animated
+          }
+        });
+      }, observerOptions);
+
+      // Observe all elements with animate-on-scroll class
+      document.querySelectorAll('.animate-on-scroll').forEach((element) => {
+        observer.observe(element);
+      });
+    </script>
+  </body>
+</html>
